@@ -14,6 +14,7 @@
 		98491A5D2589690B00E058DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98491A5C2589690B00E058DE /* ContentView.swift */; };
 		98491A5F2589690C00E058DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98491A5E2589690C00E058DE /* Assets.xcassets */; };
 		98491A622589690C00E058DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98491A612589690C00E058DE /* Preview Assets.xcassets */; };
+		9853BA65258ABD380082FD8B /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9853BA64258ABD380082FD8B /* CategoryListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		98491A5E2589690C00E058DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98491A612589690C00E058DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		98491A632589690C00E058DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9853BA64258ABD380082FD8B /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		98491A592589690B00E058DE /* app-unimarc-ios */ = {
 			isa = PBXGroup;
 			children = (
+				9853BA63258ABC8A0082FD8B /* View Models */,
 				9813BD88258A3F1D004F7AF5 /* Services */,
 				9813BD83258A3EC0004F7AF5 /* Models */,
 				9813BD7E258A3DC2004F7AF5 /* Extensions */,
@@ -100,6 +103,14 @@
 				98491A612589690C00E058DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9853BA63258ABC8A0082FD8B /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				9853BA64258ABD380082FD8B /* CategoryListViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +184,7 @@
 			files = (
 				98491A5D2589690B00E058DE /* ContentView.swift in Sources */,
 				9813BD8A258A3F61004F7AF5 /* HTTPClient.swift in Sources */,
+				9853BA65258ABD380082FD8B /* CategoryListViewModel.swift in Sources */,
 				9813BD85258A3EED004F7AF5 /* CategoryModel.swift in Sources */,
 				9813BD80258A3DE9004F7AF5 /* URL+Extensions.swift in Sources */,
 				98491A5B2589690B00E058DE /* app_unimarc_iosApp.swift in Sources */,
