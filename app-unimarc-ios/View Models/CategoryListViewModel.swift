@@ -31,7 +31,7 @@ class CategoryListViewModel: ObservableObject {
     }
 }
 
-struct CategoryViewModel { 
+struct CategoryViewModel {
     
     let category: Category
     
