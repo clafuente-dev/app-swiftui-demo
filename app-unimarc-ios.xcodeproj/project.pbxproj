@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9813BD80258A3DE9004F7AF5 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9813BD7F258A3DE9004F7AF5 /* URL+Extensions.swift */; };
+		9813BD85258A3EED004F7AF5 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9813BD84258A3EED004F7AF5 /* CategoryModel.swift */; };
+		9813BD8A258A3F61004F7AF5 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9813BD89258A3F61004F7AF5 /* HTTPClient.swift */; };
 		98491A5B2589690B00E058DE /* app_unimarc_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98491A5A2589690B00E058DE /* app_unimarc_iosApp.swift */; };
 		98491A5D2589690B00E058DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98491A5C2589690B00E058DE /* ContentView.swift */; };
 		98491A5F2589690C00E058DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98491A5E2589690C00E058DE /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9813BD7F258A3DE9004F7AF5 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		9813BD84258A3EED004F7AF5 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		9813BD89258A3F61004F7AF5 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		98491A572589690B00E058DE /* app-unimarc-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-unimarc-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98491A5A2589690B00E058DE /* app_unimarc_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_unimarc_iosApp.swift; sourceTree = "<group>"; };
 		98491A5C2589690B00E058DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9813BD7E258A3DC2004F7AF5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9813BD7F258A3DE9004F7AF5 /* URL+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9813BD83258A3EC0004F7AF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9813BD84258A3EED004F7AF5 /* CategoryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9813BD88258A3F1D004F7AF5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9813BD89258A3F61004F7AF5 /* HTTPClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		98491A4E2589690B00E058DE = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +82,9 @@
 		98491A592589690B00E058DE /* app-unimarc-ios */ = {
 			isa = PBXGroup;
 			children = (
+				9813BD88258A3F1D004F7AF5 /* Services */,
+				9813BD83258A3EC0004F7AF5 /* Models */,
+				9813BD7E258A3DC2004F7AF5 /* Extensions */,
 				98491A5A2589690B00E058DE /* app_unimarc_iosApp.swift */,
 				98491A5C2589690B00E058DE /* ContentView.swift */,
 				98491A5E2589690C00E058DE /* Assets.xcassets */,
@@ -139,6 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				98491A5D2589690B00E058DE /* ContentView.swift in Sources */,
+				9813BD8A258A3F61004F7AF5 /* HTTPClient.swift in Sources */,
+				9813BD85258A3EED004F7AF5 /* CategoryModel.swift in Sources */,
+				9813BD80258A3DE9004F7AF5 /* URL+Extensions.swift in Sources */,
 				98491A5B2589690B00E058DE /* app_unimarc_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
