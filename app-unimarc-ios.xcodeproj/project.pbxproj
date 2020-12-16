@@ -17,6 +17,8 @@
 		9853BA65258ABD380082FD8B /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9853BA64258ABD380082FD8B /* CategoryListViewModel.swift */; };
 		9853BA69258AC09A0082FD8B /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9853BA68258AC09A0082FD8B /* View+Extensions.swift */; };
 		9853BA6D258AC1220082FD8B /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9853BA6C258AC1220082FD8B /* CategoryListView.swift */; };
+		9853BA72258AC4730082FD8B /* CategoryListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9853BA71258AC4730082FD8B /* CategoryListScreen.swift */; };
+		9853BA75258AC53A0082FD8B /* SecondCategoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9853BA74258AC53A0082FD8B /* SecondCategoryScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		9853BA64258ABD380082FD8B /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
 		9853BA68258AC09A0082FD8B /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		9853BA6C258AC1220082FD8B /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
+		9853BA71258AC4730082FD8B /* CategoryListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListScreen.swift; sourceTree = "<group>"; };
+		9853BA74258AC53A0082FD8B /* SecondCategoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCategoryScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		98491A592589690B00E058DE /* app-unimarc-ios */ = {
 			isa = PBXGroup;
 			children = (
+				9853BA70258AC3F00082FD8B /* Screens */,
 				9853BA6B258AC0DF0082FD8B /* Views */,
 				9853BA63258ABC8A0082FD8B /* View Models */,
 				9813BD88258A3F1D004F7AF5 /* Services */,
@@ -125,6 +130,15 @@
 				9853BA6C258AC1220082FD8B /* CategoryListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9853BA70258AC3F00082FD8B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9853BA71258AC4730082FD8B /* CategoryListScreen.swift */,
+				9853BA74258AC53A0082FD8B /* SecondCategoryScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +213,11 @@
 				98491A5D2589690B00E058DE /* ContentView.swift in Sources */,
 				9813BD8A258A3F61004F7AF5 /* HTTPClient.swift in Sources */,
 				9853BA65258ABD380082FD8B /* CategoryListViewModel.swift in Sources */,
+				9853BA72258AC4730082FD8B /* CategoryListScreen.swift in Sources */,
 				9853BA69258AC09A0082FD8B /* View+Extensions.swift in Sources */,
 				9813BD85258A3EED004F7AF5 /* CategoryModel.swift in Sources */,
 				9813BD80258A3DE9004F7AF5 /* URL+Extensions.swift in Sources */,
+				9853BA75258AC53A0082FD8B /* SecondCategoryScreen.swift in Sources */,
 				9853BA6D258AC1220082FD8B /* CategoryListView.swift in Sources */,
 				98491A5B2589690B00E058DE /* app_unimarc_iosApp.swift in Sources */,
 			);
