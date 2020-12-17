@@ -23,7 +23,6 @@ struct SecondCategoryScreen: View {
     }
     
     var body: some View {
-        
         VStack {
             HStack {
                 Button(action: {
@@ -47,17 +46,16 @@ struct SecondCategoryScreen: View {
                                 .cornerRadius(45/2)
                                 .foregroundColor(.white)
                         }
-                        .navigationBarTitle("")
-                        .navigationBarHidden(true)
                     }
                     .frame(height: 45)
                 }
+                .padding([.top, .bottom])
             }
             Spacer()
         }
-        .navigationBarTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
-        .padding([.top, .bottom])
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
 }

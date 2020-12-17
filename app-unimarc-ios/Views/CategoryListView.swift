@@ -22,12 +22,17 @@ struct CategoryListView: View {
                                 .cornerRadius(45/2)
                                 .foregroundColor(.white)
                     }
-                        .navigationBarTitle("")
-                        .navigationBarHidden(true)
+                        //.navigationBarTitle("")
+                        //.navigationBarHidden(true)
                 }
                 .frame(height: 45)
             }
+                //.navigationBarTitle("")
+                //.navigationBarHidden(true)
         }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
     }
+    
 }
 

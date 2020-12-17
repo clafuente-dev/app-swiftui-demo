@@ -10,7 +10,6 @@ import SwiftUI
 struct CategoryListScreen: View {
     
     @ObservedObject private var categoryListVM: CategoryListViewModel
-   // @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     init() {
         self.categoryListVM = CategoryListViewModel()
@@ -20,19 +19,12 @@ struct CategoryListScreen: View {
     var body: some View {
         VStack {
             CategoryListView(categories: self.categoryListVM.categories)
-                .padding([.bottom]) 
+                .padding([.top, .bottom]) 
             Spacer()
-                //.navigationBarTitle("App Unimarc")
         }
         .embedNavigationView()
         .navigationBarTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
-    }
-}
-
-struct CategoryListScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        CategoryListScreen()
     }
 }
