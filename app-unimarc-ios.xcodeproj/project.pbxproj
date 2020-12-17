@@ -11,7 +11,6 @@
 		9813BD85258A3EED004F7AF5 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9813BD84258A3EED004F7AF5 /* CategoryModel.swift */; };
 		9813BD8A258A3F61004F7AF5 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9813BD89258A3F61004F7AF5 /* HTTPClient.swift */; };
 		98491A5B2589690B00E058DE /* app_unimarc_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98491A5A2589690B00E058DE /* app_unimarc_iosApp.swift */; };
-		98491A5D2589690B00E058DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98491A5C2589690B00E058DE /* ContentView.swift */; };
 		98491A5F2589690C00E058DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98491A5E2589690C00E058DE /* Assets.xcassets */; };
 		98491A622589690C00E058DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98491A612589690C00E058DE /* Preview Assets.xcassets */; };
 		9853BA65258ABD380082FD8B /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9853BA64258ABD380082FD8B /* CategoryListViewModel.swift */; };
@@ -27,7 +26,6 @@
 		9813BD89258A3F61004F7AF5 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		98491A572589690B00E058DE /* app-unimarc-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-unimarc-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98491A5A2589690B00E058DE /* app_unimarc_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_unimarc_iosApp.swift; sourceTree = "<group>"; };
-		98491A5C2589690B00E058DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		98491A5E2589690C00E058DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98491A612589690C00E058DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		98491A632589690C00E058DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				9813BD83258A3EC0004F7AF5 /* Models */,
 				9813BD7E258A3DC2004F7AF5 /* Extensions */,
 				98491A5A2589690B00E058DE /* app_unimarc_iosApp.swift */,
-				98491A5C2589690B00E058DE /* ContentView.swift */,
 				98491A5E2589690C00E058DE /* Assets.xcassets */,
 				98491A632589690C00E058DE /* Info.plist */,
 				98491A602589690C00E058DE /* Preview Content */,
@@ -210,7 +207,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98491A5D2589690B00E058DE /* ContentView.swift in Sources */,
 				9813BD8A258A3F61004F7AF5 /* HTTPClient.swift in Sources */,
 				9853BA65258ABD380082FD8B /* CategoryListViewModel.swift in Sources */,
 				9853BA72258AC4730082FD8B /* CategoryListScreen.swift in Sources */,
@@ -348,6 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"app-unimarc-ios/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "app-unimarc-ios/Info.plist";
@@ -356,7 +353,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.smu.unimarc.app-unimarc-ios";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cl.smu.unimarcapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -369,6 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"app-unimarc-ios/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "app-unimarc-ios/Info.plist";
@@ -377,7 +376,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.smu.unimarc.app-unimarc-ios";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cl.smu.unimarcapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

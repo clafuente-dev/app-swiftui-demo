@@ -11,7 +11,7 @@ import SwiftUI
 struct app_unimarc_iosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CategoryListScreen()
         }
     }
 }

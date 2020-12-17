@@ -15,13 +15,15 @@ struct CategoryListView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(categories, id: \.id) { category in
-                        NavigationLink(destination: SecondCategoryScreen(categories: category.children)) {
+                        NavigationLink(destination: SecondCategoryScreen(title: category.name, categories: category.children)) {
                             Text(category.name)
                                 .padding(10)
                                 .background(Color.red)
                                 .cornerRadius(45/2)
                                 .foregroundColor(.white)
                     }
+                        .navigationBarTitle("")
+                        .navigationBarHidden(true)
                 }
                 .frame(height: 45)
             }
@@ -29,12 +31,3 @@ struct CategoryListView: View {
     }
 }
 
-
-
-
-
-struct CategoryListView_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
-}
