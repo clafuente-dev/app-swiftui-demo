@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Decodable is a type that can decode itself from an external representation.
 struct PayloadContent: Decodable {
     let message: String
     let info: [Category]
@@ -16,6 +17,7 @@ struct CategoryPayload: Decodable {
     let payload: PayloadContent
 }
 
+// A type that can decode itself from an external representation. We're just getting/typifying json that needs to be mapped
 struct Category: Decodable {
     let id: Int
     let name: String
@@ -25,7 +27,8 @@ struct Category: Decodable {
     let title: String
     let metaTagDescription: String
     
-private enum CodingKeys: String, CodingKey {
+// A type that can be used as a key for encoding and decoding.
+    private enum CodingKeys: String, CodingKey {
         case id
         case name
         case hasChildren

@@ -18,17 +18,13 @@ struct CategoryListView: View {
                         NavigationLink(destination: SecondCategoryScreen(title: category.name, categories: category.children)) {
                             Text(category.name)
                                 .padding(10)
-                                .background(Color.red)
+                                .background(Color.red) // TODO: change color to custom
                                 .cornerRadius(45/2)
-                                .foregroundColor(.white)
+                                .foregroundColor(.white) // TODO: change font color to custom
                     }
-                        //.navigationBarTitle("")
-                        //.navigationBarHidden(true)
                 }
                 .frame(height: 45)
             }
-                //.navigationBarTitle("")
-                //.navigationBarHidden(true)
         }
             .navigationBarTitle("")
             .navigationBarHidden(true)

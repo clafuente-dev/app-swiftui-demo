@@ -23,6 +23,7 @@ struct CategoryListScreen: View {
             Spacer()
         }
         .embedNavigationView()
+        // Hidden navigation bar to customize it
         .navigationBarTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)

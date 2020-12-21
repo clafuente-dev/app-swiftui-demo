@@ -31,7 +31,8 @@ class CategoryListViewModel: ObservableObject {
     }
 }
 
-struct CategoryViewModel {
+// this will provide data to the View so it can display the categories
+struct CategoryViewModel { // The data that needs to be viewed I expose here only the data that I want to view
     
     let category: Category
     

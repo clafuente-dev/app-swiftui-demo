@@ -27,7 +27,6 @@ struct SecondCategoryScreen: View {
             HStack {
                 Button(action: {
                     self.presentationMode.wrappedValue.dismiss()
-                    print("click")
                 }, label: {
                     Image(systemName: "arrow.left")
                         .padding(.leading)
@@ -35,16 +34,16 @@ struct SecondCategoryScreen: View {
                     Spacer()
                 })
                 
-            }.frame(height: 45)
+            }.frame(height: 45) // the container has a height of 45 pts
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(categories, id: \.id) { category in
                         NavigationLink(destination: SecondCategoryScreen(title: category.name, categories: category.children)) {
                             Text(category.name)
                                 .padding(10)
-                                .background(Color.red)
+                                .background(Color.red) // TODO: change color to custom
                                 .cornerRadius(45/2)
-                                .foregroundColor(.white)
+                                .foregroundColor(.white) // TODO: change font color to custom
                         }
                     }
                     .frame(height: 45)
@@ -54,6 +53,7 @@ struct SecondCategoryScreen: View {
             Spacer()
         }
         .navigationBarTitleDisplayMode(.inline)
+        // Hidden navigation bar to customize it
         .navigationBarBackButtonHidden(true)
         .navigationBarTitle("")
         .navigationBarHidden(true)

@@ -27,7 +27,8 @@ class HTTPClient {
             guard let data = data, error == nil else {
                 return completion(.failure(.noData))
             }
-        
+            
+            // try? in the case that this fails returns a nil
             guard let categoryResponse = try? JSONDecoder().decode(CategoryPayload.self, from: data) else {
                 return completion(.failure(.decodingError))
             }
